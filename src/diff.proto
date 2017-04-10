@@ -1,0 +1,15 @@
+
+message Pixel {
+    required int32 x = 1;
+    required int32 y = 2;
+    required int32 r = 3;
+    required int32 g = 4;
+    required int32 b = 5;
+}
+
+message Diff {
+    required int32 fromTimestamp = 1;
+    required int32 toTimestamp = 2;
+
+    repeated Pixel pixel = 3;
+}
