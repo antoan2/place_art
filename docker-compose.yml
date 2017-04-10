@@ -1,0 +1,10 @@
+version: '3'
+services:
+    video_creator:
+        image: "place:base"
+        build: ./docker
+        stdin_open: true
+        tty: true
+        volumes:
+            - ./src:/opt/work
+            - ./diffs:/diffs
